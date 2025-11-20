@@ -1,6 +1,6 @@
 body 
 {
-background: #7f7c85;
+background: #333C80;
 font-family: Arial, Helvetica, sans-serif;
 text-align: center;
 }
@@ -19,17 +19,24 @@ text-align: center;
     width: 4  0%;
     margin: 10px;
     padding: 20px 10px;
-    background: white; /* pick a color */
+    background: white; 
     border-radius: 25%;
+}
+.project img[src="images/problemstatement.png"] 
+{
+    width: 150px;
+    height: 1200px;
+    margin: 10px;
+    border: 2px solid #292A33; 
+    display: block;
+    margin: auto;
 }
 .project img
 {
-    /*
-width: 300px;
-height: 300px;
-*/
-margin: 10px;
-border: 2px solid rgb(126, 14, 201); /* choose a color */
-display: block;
-margin: auto;
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+    border: 2px solid #292A33; 
+    display: block;
+    margin: auto;
 }
