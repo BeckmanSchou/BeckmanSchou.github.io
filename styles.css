@@ -31,7 +31,16 @@ text-align: center;
     display: block;
     margin: auto;
 }
-.project img[src="images"] 
+.project img[src="images/Sketches_IMG.png"] 
+{
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+    border: 2px solid #292A33; 
+    display: block;
+    margin: auto;
+}
+.project img[src="images/diagram-1.png"] 
 {
     width: 300px;
     height: 300px;
