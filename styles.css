@@ -152,4 +152,8 @@ text-align: center;
 .resume .resume__strong {
   font-weight: 700;
 }
+
+.resume .resume__list-item {
+  margin-top: 0.25rem;
+}
 /*Section for the resume was written by ChatGBT*/
