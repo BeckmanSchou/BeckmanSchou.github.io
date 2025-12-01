@@ -62,7 +62,7 @@ text-align: center;
 :root {
   --rsm-font-family: "Times New Roman", serif;
   --rsm-font-size: 16px;
-  --rsm-text-color: #000;
+  --rsm-text-color: whitesmoke;
 
   --rsm-title-size: 28px;
   --rsm-heading-size: 20px;
