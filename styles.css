@@ -58,3 +58,98 @@ text-align: center;
     display: block;
     margin: auto;
 }
+
+:root {
+  --rsm-font-family: "Times New Roman", serif;
+  --rsm-font-size: 16px;
+  --rsm-text-color: #000;
+
+  --rsm-title-size: 28px;
+  --rsm-heading-size: 20px;
+
+  --rsm-border-color: #000;
+  --rsm-border-weight: 1px;
+
+  --rsm-subtle-style: italic;
+
+  --rsm-gap: 0.5rem;
+  --rsm-section-spacing: 1rem;
+  --rsm-job-spacing: 0.75rem;
+  --rsm-list-top: 0.25rem;
+}
+
+/* ================================
+   RESUME — NAMESPACED STYLES
+   Entirely scoped under .resume
+   ================================ */
+
+.resume {
+  font-family: var(--rsm-font-family);
+  font-size: var(--rsm-font-size);
+  color: var(--rsm-text-color);
+  line-height: 1.35;
+}
+
+/* Title / contact */
+.resume .resume__title {
+  margin: 0 0 4px 0;
+  font-size: var(--rsm-title-size);
+  font-weight: 700;
+}
+
+.resume .resume__contact {
+  float: right;
+  text-align: right;
+  font-size: 0.9rem;
+}
+
+/* Clearfix */
+.resume.resume__clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Subtle tagline */
+.resume .resume__subtle {
+  font-style: var(--rsm-subtle-style);
+  margin-bottom: 1rem;
+}
+
+/* Section headings */
+.resume .resume__section-heading {
+  font-size: var(--rsm-heading-size);
+  margin-top: 1.25rem;
+  margin-bottom: 0.4rem;
+  padding-bottom: 0.25rem;
+  border-bottom: var(--rsm-border-weight) solid var(--rsm-border-color);
+}
+
+/* Section wrapper */
+.resume .resume__section {
+  margin-bottom: var(--rsm-section-spacing);
+}
+
+/* Job blocks */
+.resume .resume__job {
+  margin-bottom: var(--rsm-job-spacing);
+}
+
+.resume .resume__job-header {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 700;
+  gap: var(--rsm-gap);
+}
+
+/* Lists */
+.resume .resume__list {
+  margin-top: var(--rsm-list-top);
+  margin-bottom: 0;
+  padding-left: 1.15rem;
+}
+
+.resume .resume__strong {
+  font-weight: 700;
+}
+/*Section for the resume was written by ChatGBT*/
