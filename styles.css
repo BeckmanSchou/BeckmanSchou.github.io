@@ -98,12 +98,14 @@ text-align: center;
 .resume .resume__title {
   margin: 0 0 4px 0;
   font-size: var(--rsm-title-size);
+  color: var(--rsm-text-color);
   font-weight: 700;
 }
 
 .resume .resume__contact {
   float: right;
   text-align: right;
+  color: var(--rsm-text-color);
   font-size: 0.9rem;
 }
 
@@ -117,12 +119,14 @@ text-align: center;
 /* Subtle tagline */
 .resume .resume__subtle {
   font-style: var(--rsm-subtle-style);
+  color: var(--rsm-text-color);
   margin-bottom: 1rem;
 }
 
 /* Section headings */
 .resume .resume__section-heading {
   font-size: var(--rsm-heading-size);
+  color: var(--rsm-text-color);
   margin-top: 1.25rem;
   margin-bottom: 0.4rem;
   padding-bottom: 0.25rem;
@@ -131,6 +135,7 @@ text-align: center;
 
 /* Section wrapper */
 .resume .resume__section {
+  color: var(--rsm-text-color);
   margin-bottom: var(--rsm-section-spacing);
 }
 
@@ -140,6 +145,7 @@ text-align: center;
 }
 
 .resume .resume__job-header {
+  color: var(--rsm-text-color);
   display: flex;
   justify-content: space-between;
   font-weight: 700;
@@ -154,10 +160,12 @@ text-align: center;
 }
 
 .resume .resume__strong {
+  color: var(--rsm-text-color);
   font-weight: 700;
 }
 
 .resume .resume__list-item {
+  color: var(--rsm-text-color);
   margin-top: 0.25rem;
 }
 /*Section for the resume was written by ChatGBT*/
