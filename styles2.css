@@ -1,0 +1,113 @@
+/* === Variables (edit to change look) === */
+:root {
+  --rsm-bg: transparent;
+  --rsm-font-family: "Georgia", "Times New Roman", serif;
+  --rsm-text-color: #ffffff;   /* default text color for resume */
+  --rsm-muted-color: rgba(255,255,255,0.75);
+  --rsm-accent: #ffffff;
+  --rsm-title-size: 26px;
+  --rsm-heading-size: 18px;
+  --rsm-gap: 12px;
+  --rsm-max-width: 800px;
+  --rsm-padding: 18px;
+}
+
+/* prevent leakage into other parts of site by scoping under .rsm-container */
+.rsm-container {
+  max-width: var(--rsm-max-width);
+  margin: 24px auto;
+  padding: var(--rsm-padding);
+  color: var(--rsm-text-color);
+  font-family: var(--rsm-font-family);
+  box-sizing: border-box;
+  text-align: left; /* preserve typical resume alignment */
+}
+
+/* Header: name + contact */
+.rsm__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: var(--rsm-gap);
+  margin-bottom: 14px;
+  flex-wrap: wrap;
+}
+
+.rsm__name {
+  margin: 0;
+  font-size: var(--rsm-title-size);
+  color: var(--rsm-accent);
+  line-height: 1.05;
+}
+
+.rsm__subtle {
+  margin: 6px 0 0 0;
+  color: var(--rsm-muted-color);
+  font-style: italic;
+}
+
+/* Contact block */
+.rsm__contact {
+  min-width: 200px;
+  max-width: 320px;
+  color: var(--rsm-muted-color);
+  font-style: normal;
+  font-size: 0.95rem;
+}
+
+.rsm__contact a.rsm__contact-link {
+  color: var(--rsm-accent);
+  text-decoration: none;
+}
+
+/* Sections */
+.rsm__section {
+  margin-top: 10px;
+  margin-bottom: 8px;
+}
+
+.rsm__section-heading {
+  margin: 0 0 8px 0;
+  font-size: var(--rsm-heading-size);
+  color: var(--rsm-accent);
+  padding-bottom: 6px;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+/* Content items */
+.rsm__section-content { color: var(--rsm-text-color); }
+
+.rsm__strong { font-weight: 700; color: var(--rsm-accent); }
+.rsm__muted { color: var(--rsm-muted-color); }
+
+/* Jobs and lists */
+.rsm__job { margin-bottom: 10px; }
+.rsm__job-header { display:flex; justify-content:space-between; gap: 8px; }
+
+.rsm__list { margin-top: 6px; }
+.rsm__list-item { margin-top: 6px; color: var(--rsm-text-color); }
+
+/* Footer */
+.rsm__footer { margin-top: 18px; color: var(--rsm-muted-color); }
+
+/* Accessibility: ensure focus outlines for keyboard navigation */
+.rsm__contact a:focus,
+.rsm__project a:focus {
+  outline: 3px solid rgba(255,255,255,0.15);
+  outline-offset: 2px;
+}
+
+/* Responsive: stack header on small screens */
+@media (max-width: 700px) {
+  .rsm__header {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .rsm__contact { text-align: left; max-width: 100%; }
+  .rsm__name { font-size: 22px; }
+}
+
+/* Utility: if you want to force color everywhere inside resume to the variable */
+.rsm-container, .rsm-container * {
+  color: inherit;
+}
