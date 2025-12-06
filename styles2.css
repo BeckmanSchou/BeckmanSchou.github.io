@@ -110,4 +110,5 @@
 /* Utility: if you want to force color everywhere inside resume to the variable */
 .rsm-container, .rsm-container * {
   color: inherit;
-}
+} 
+/*This code was written by ChatGBT*/
